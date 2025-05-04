@@ -3925,3 +3925,30 @@ input, select, textarea {
 .flex-feature .content {
   flex: 1;
 }
+
+/* Gaya untuk tombol floating */
+.floating-button {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  background-color: #007bff; /* Warna latar belakang */
+  color: white; /* Warna ikon */
+  padding: 15px;
+  border-radius: 50%;
+  font-size: 24px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Efek bayangan */
+  text-align: center;
+  transition: background-color 0.3s ease-in-out; /* Animasi saat hover */
+  z-index: 1000; /* Agar tombol di atas elemen lain */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.floating-button:hover {
+  background-color: #0056b3; /* Warna saat hover */
+}
+
+.floating-button i {
+  font-size: 24px; /* Ukuran ikon */
+}
