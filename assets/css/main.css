@@ -3926,29 +3926,27 @@ input, select, textarea {
   flex: 1;
 }
 
-/* Gaya untuk tombol floating */
+/* Styling untuk tombol floating */
 .floating-button {
-  position: fixed;
-  bottom: 20px;
-  right: 20px;
-  background-color: #007bff; /* Warna latar belakang */
-  color: white; /* Warna ikon */
-  padding: 15px;
-  border-radius: 50%;
-  font-size: 24px;
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Efek bayangan */
-  text-align: center;
-  transition: background-color 0.3s ease-in-out; /* Animasi saat hover */
-  z-index: 1000; /* Agar tombol di atas elemen lain */
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-
-.floating-button:hover {
-  background-color: #0056b3; /* Warna saat hover */
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background-color: #28a745; /* Warna latar belakang tombol */
+    color: white; /* Warna teks tombol */
+    padding: 10px 25px; /* Padding tombol */
+    border-radius: 30px; /* Membuat pinggiran tombol bulat */
+    text-decoration: none; /* Menghilangkan garis bawah */
+    display: flex; /* Menyusun ikon dan teks dalam satu baris */
+    align-items: center; /* Mengatur agar teks dan ikon sejajar */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3); /* Bayangan tombol */
+    font-size: 16px; /* Ukuran font */
 }
 
 .floating-button i {
-  font-size: 24px; /* Ukuran ikon */
+    margin-right: 10px; /* Memberikan jarak antara ikon dan teks */
+}
+
+/* Efek hover untuk tombol */
+.floating-button:hover {
+    background-color: #218838; /* Warna saat hover */
 }
