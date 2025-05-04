@@ -208,34 +208,6 @@
     </div>
   </div>
 </section>
-
-<!-- JavaScript untuk mereset form setelah pengiriman -->
-<script>
-  document.getElementById('consultation-form').addEventListener('submit', function(event) {
-    // Mencegah form agar tidak mengarah ke URL atau reload
-    event.preventDefault();
-
-    // Kirim form ke Formspree (mendapatkan respons)
-    fetch('https://formspree.io/your-email@example.com', {
-      method: 'POST',
-      body: new FormData(event.target),
-    })
-    .then(response => response.json())
-    .then(data => {
-      if (data.ok) {
-        // Jika pengiriman berhasil, reset form
-        event.target.reset();
-        alert('Pesan berhasil dikirim! Terima kasih telah menghubungi kami.');
-      } else {
-        alert('Terjadi kesalahan saat mengirim pesan. Coba lagi nanti.');
-      }
-    })
-    .catch(error => {
-      alert('Terjadi kesalahan, coba lagi nanti.');
-    });
-  });
-</script>
-
 								
 		<!-- Footer -->
 			<footer id="footer" class="wrapper style1-alt">
