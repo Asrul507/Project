@@ -3907,3 +3907,21 @@ input, select, textarea {
 			}
 
 		}
+
+.flex-feature {
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+  flex-wrap: wrap;
+  margin-bottom: 3rem;
+}
+
+.flex-feature .image-wrapper img {
+  max-width: 300px;
+  height: auto;
+  border-radius: 8px;
+}
+
+.flex-feature .content {
+  flex: 1;
+}
