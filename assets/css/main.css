@@ -3958,3 +3958,11 @@ input, select, textarea {
   border-radius: 15px;
   padding: 20px;
 }
+
+form input,
+form textarea,
+form select {
+  background-color: white !important;
+  color: black !important;
+}
+
