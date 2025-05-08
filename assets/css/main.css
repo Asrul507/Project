@@ -4037,14 +4037,22 @@ form select {
   background-color: rgba(0, 0, 0, 0.6);
 }
 
-.image-wrapper img {
-  width: 100%;
-  height: auto;
-  max-height: 200px;
-  object-fit: cover;
-  border-radius: 1rem;
-  display: block;
+.image-wrapper {
+  width: 100%; /* Lebar full untuk container */
+  height: 300px; /* Tentukan tinggi yang konsisten untuk semua gambar */
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
+
+.image-wrapper img {
+  width: 100%; /* Lebar penuh */
+  height: 100%; /* Tinggi penuh sesuai dengan wrapper */
+  object-fit: cover; /* Menjaga gambar tetap proporsional tanpa distorsi */
+  border-radius: 1rem; /* Jika mau efek melengkung pada gambar */
+}
+
 /* Responsive setting untuk layar kecil (mobile) */
 @media screen and (max-width: 768px) {
   .image-wrapper img {
