@@ -3997,8 +3997,8 @@ form select {
 }
 
 .card-transparent {
-  flex: 0 0 80%;
-  min-width: 300px;
+  flex: 0 0 60%; /* Atau 50% */
+  min-width: 250px;
   background-color: rgba(255, 255, 255, 0.1);
   backdrop-filter: blur(10px);
   border-radius: 12px;
