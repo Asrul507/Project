@@ -53,84 +53,84 @@
                 <p>Adapun sistem aplikasi yang kami tawarkan antara lain:</p>
 
                 <!-- Services -->
-               <section class="fitur-scroll-section">
+<section class="fitur-scroll-section">
   <h2 class="centered">Fitur Aplikasi Kami</h2>
   <div class="fitur-scroll-wrapper">
-<div class="nav-buttons">
-    <button class="prev" onclick="scrollLeft()">Prev</button>
-    <button class="next" onclick="scrollRight()">Next</button>
-  </div>
-    
-    <div class="card-transparent">
-      <div class="image-wrapper">
-        <img src="images/pic01.jpg" alt="Sistem Perhotelan" />
-      </div>
-      <div class="content">
-        <div class="inner">
-          <h2>Sistem Perhotelan/Guest House</h2>
-          <p>Mengelola bisnis akomodasi Anda seperti check-in/check-out, database pengunjung, dan laporan keuangan.</p>
+
+    <!-- Track horizontal -->
+    <div class="card-track">
+
+      <div class="card-transparent">
+        <div class="image-wrapper">
+          <img src="images/pic01.jpg" alt="Sistem Perhotelan" />
+        </div>
+        <div class="content">
+          <div class="inner">
+            <h2>Sistem Perhotelan/Guest House</h2>
+            <p>Mengelola bisnis akomodasi Anda seperti check-in/check-out, database pengunjung, dan laporan keuangan.</p>
+          </div>
         </div>
       </div>
+
+      <div class="card-transparent">
+        <div class="image-wrapper">
+          <img src="images/pic02.jpg" alt="Sistem Kasir POS" />
+        </div>
+        <div class="content">
+          <div class="inner">
+            <h2>Sistem Kasir P.O.S</h2>
+            <p>Memudahkan Anda dalam menginput penjualan, pengeluaran, mengelola stok barang, dan laporan keuangan...</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="card-transparent">
+        <div class="image-wrapper">
+          <img src="images/pic04.jpg" alt="Absensi" />
+        </div>
+        <div class="content">
+          <div class="inner">
+            <h2>Absensi</h2>
+            <p>Memudahkan pencatatan kehadiran dengan integrasi Google, membaca foto, QR code, dan lokasi.</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="card-transparent">
+        <div class="image-wrapper">
+          <img src="images/pic03.jpg" alt="Inventory" />
+        </div>
+        <div class="content">
+          <div class="inner">
+            <h2>Inventory</h2>
+            <p>Kelola data stok barang dengan mudah dan efisien, tanpa ribet dan langsung beres.</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="card-transparent">
+        <div class="image-wrapper">
+          <img src="images/pic05.jpg" alt="Aplikasi Kostum" />
+        </div>
+        <div class="content">
+          <div class="inner">
+            <h2>Aplikasi Kostum Lainnya</h2>
+            <p>Mulai diskusi dengan kami untuk menyesuaikan aplikasi Anda.</p>
+          </div>
+        </div>
+      </div>
+
     </div>
 
-    <div class="card-transparent">
-      <div class="image-wrapper">
-        <img src="images/pic02.jpg" alt="Sistem Kasir POS" />
-      </div>
-      <div class="content">
-        <div class="inner">
-          <h2>Sistem Kasir P.O.S</h2>
-          <p>Memudahkan Anda dalam menginput penjualan, pengeluaran, mengelola stok barang, dan laporan keuangan...</p>
-        </div>
-      </div>
+    <!-- Tombol navigasi -->
+    <div class="nav-buttons">
+      <button class="prev">Prev</button>
+      <button class="next">Next</button>
     </div>
 
-    <!-- Tambahkan card lainnya di sini -->
-    
-    <!-- Absensi -->
-    <div class="card-transparent">
-      <div class="image-wrapper">
-        <img src="images/pic04.jpg" alt="Absensi" />
-      </div>
-      <div class="content">
-        <div class="inner">
-          <h2>Absensi</h2>
-          <p>Memudahkan pencatatan kehadiran dengan integrasi Google, membaca foto, QR code, dan lokasi.</p>
-        </div>
-      </div>
-    </div>
-
-    <!-- Inventory -->
-    <div class="card-transparent">
-      <div class="image-wrapper">
-        <img src="images/pic03.jpg" alt="Inventory" />
-      </div>
-      <div class="content">
-        <div class="inner">
-          <h2>Inventory</h2>
-          <p>Kelola data stok barang dengan mudah dan efisien, tanpa ribet dan langsung beres.</p>
-        </div>
-      </div>
-    </div>
-
-    <!-- Aplikasi Kostum -->
-    <div class="card-transparent">
-      <div class="image-wrapper">
-        <img src="images/pic05.jpg" alt="Aplikasi Kostum" />
-      </div>
-      <div class="content">
-        <div class="inner">
-          <h2>Aplikasi Kostum Lainnya</h2>
-          <p>Mulai diskusi dengan kami untuk menyesuaikan aplikasi Anda.</p>
-        </div>
-      </div>
-    </div>
-<div class="nav-buttons">
-    <button class="prev" onclick="scrollLeft()">Prev</button>
-    <button class="next" onclick="scrollRight()">Next</button>
-  </div>
   </div>
 </section>
+
 
 
 
@@ -295,6 +295,21 @@ function scrollRight() {
     behavior: 'smooth'
   });
 }
+
+<script>
+  const track = document.querySelector('.card-track');
+  const nextBtn = document.querySelector('.next');
+  const prevBtn = document.querySelector('.prev');
+
+  nextBtn.addEventListener('click', () => {
+    track.scrollBy({ left: 300, behavior: 'smooth' });
+  });
+
+  prevBtn.addEventListener('click', () => {
+    track.scrollBy({ left: -300, behavior: 'smooth' });
+  });
+</script>
+
 
 
 
