@@ -4039,7 +4039,7 @@ form select {
 
 .image-wrapper {
   width: 100%; /* Lebar full untuk container */
-  height: 300px; /* Tentukan tinggi yang konsisten untuk semua gambar */
+  height: 400px; /* Tentukan tinggi yang konsisten untuk semua gambar */
   overflow: hidden;
   display: flex;
   justify-content: center;
