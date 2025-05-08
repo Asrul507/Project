@@ -4005,6 +4005,19 @@ form select {
 .fitur-scroll-wrapper::-webkit-scrollbar {
   display: none;
 }
+.card-transparent {
+  flex: 0 0 80%;
+  scroll-snap-align: start;
+  background-color: transparent; /* Card menjadi transparan */
+  border-radius: 12px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  min-width: 300px;
+  max-width: 400px;
+  backdrop-filter: blur(8px) brightness(0.8); /* Menyesuaikan latar belakang, bisa ditambah blur */
+  -webkit-backdrop-filter: blur(8px) brightness(0.8); /* Kompatibilitas dengan browser Webkit */
+}
+
 
 
 
@@ -4017,5 +4030,27 @@ form select {
 
 .content {
   padding: 20px;
+}
+
+.nav-buttons {
+  display: flex;
+  justify-content: space-between;
+  margin: 20px 0;
+  width: 100%;
+  position: relative;
+}
+
+.prev, .next {
+  background-color: rgba(0, 0, 0, 0.5);
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  cursor: pointer;
+  border-radius: 5px;
+  transition: background-color 0.3s ease;
+}
+
+.prev:hover, .next:hover {
+  background-color: rgba(0, 0, 0, 0.7);
 }
 

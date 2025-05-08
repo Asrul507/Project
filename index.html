@@ -56,6 +56,10 @@
                <section class="fitur-scroll-section">
   <h2 class="centered">Fitur Aplikasi Kami</h2>
   <div class="fitur-scroll-wrapper">
+<div class="nav-buttons">
+    <button class="prev" onclick="scrollLeft()">Prev</button>
+    <button class="next" onclick="scrollRight()">Next</button>
+  </div>
     
     <div class="card-transparent">
       <div class="image-wrapper">
@@ -121,7 +125,10 @@
         </div>
       </div>
     </div>
-
+<div class="nav-buttons">
+    <button class="prev" onclick="scrollLeft()">Prev</button>
+    <button class="next" onclick="scrollRight()">Next</button>
+  </div>
   </div>
 </section>
 
@@ -274,6 +281,21 @@
 <a href="#three" class="floating-button">
         <i class="fa fa-comment-dots"></i> Konsultasi Sekarang
     </a>
+
+function scrollLeft() {
+  document.querySelector('.fitur-scroll-wrapper').scrollBy({
+    left: -300,
+    behavior: 'smooth'
+  });
+}
+
+function scrollRight() {
+  document.querySelector('.fitur-scroll-wrapper').scrollBy({
+    left: 300,
+    behavior: 'smooth'
+  });
+}
+
 
 
 </body>
