@@ -4090,15 +4090,23 @@ form select {
     font-size: 0.9rem;
   }
 
-  .nav-buttons {
-    display: flex;
-    justify-content: center;
-    margin-top: 1rem;
+ @media screen and (max-width: 480px) {
+  .nav-button {
+    font-size: 1.5rem;
+    padding: 0.4rem 0.8rem;
+    top: auto;
+    bottom: 10px;
+    transform: none;
+    background-color: rgba(255, 255, 255, 0.8);
   }
 
-  .nav-buttons button {
-    padding: 0.5rem 1rem;
-    font-size: 0.9rem;
-    cursor: pointer;
+  .nav-button.prev {
+    left: 10px;
+    right: auto;
+  }
+
+  .nav-button.next {
+    right: 10px;
+    left: auto;
   }
 }
