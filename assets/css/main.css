@@ -4036,3 +4036,25 @@ form select {
 .nav-buttons button:hover {
   background-color: rgba(0, 0, 0, 0.6);
 }
+
+.image-wrapper img {
+  width: 100%;
+  height: auto;
+  max-height: 200px;
+  object-fit: cover;
+  border-radius: 1rem;
+  display: block;
+}
+/* Responsive setting untuk layar kecil (mobile) */
+@media screen and (max-width: 768px) {
+  .image-wrapper img {
+    max-height: 150px;
+  }
+}
+
+/* Responsive setting untuk layar sangat kecil */
+@media screen and (max-width: 480px) {
+  .image-wrapper img {
+    max-height: 120px;
+  }
+}
