@@ -3966,3 +3966,19 @@ form select {
   color: black !important;
 }
 
+.btn-cta {
+  background-color: #FF5722; /* Warna terang */
+  color: white;
+  padding: 15px 30px;
+  border: none;
+  border-radius: 10px;
+  font-size: 18px;
+  text-decoration: none;
+  display: inline-block;
+  transition: background-color 0.3s ease;
+}
+
+.btn-cta:hover {
+  background-color: #E64A19;
+}
+
