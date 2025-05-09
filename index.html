@@ -2,6 +2,8 @@
 <html lang="id">
 
 <head>
+	<!-- Link CSS untuk AOS -->
+	<link href="https://unpkg.com/aos@2.3.4/dist/aos.css" rel="stylesheet">
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
     <title>Apps Developer System</title>
@@ -60,7 +62,7 @@
     <!-- Track horizontal -->
     <div class="card-track">
 
-      <div class="card-transparent">
+      <div class="card-transparent" data-aos="fade-up">
         <div class="image-wrapper">
           <img src="images/pic01.jpg" alt="Sistem Perhotelan" />
         </div>
@@ -72,7 +74,7 @@
         </div>
       </div>
 
-      <div class="card-transparent">
+      <div class="card-transparent" data-aos="fade-up">
         <div class="image-wrapper">
           <img src="images/pic02.jpg" alt="Sistem Kasir POS" />
         </div>
@@ -84,7 +86,7 @@
         </div>
       </div>
 
-      <div class="card-transparent">
+      <div class="card-transparent" data-aos="fade-up">
         <div class="image-wrapper">
           <img src="images/pic04.jpg" alt="Absensi" />
         </div>
@@ -96,7 +98,7 @@
         </div>
       </div>
 
-      <div class="card-transparent">
+      <div class="card-transparent" data-aos="fade-up">
         <div class="image-wrapper">
           <img src="images/pic03.jpg" alt="Inventory" />
         </div>
@@ -108,7 +110,7 @@
         </div>
       </div>
 
-      <div class="card-transparent">
+      <div class="card-transparent" data-aos="fade-up">
         <div class="image-wrapper">
           <img src="images/pic05.jpg" alt="Aplikasi Kostum" />
         </div>
@@ -141,7 +143,7 @@
         </section>
 
         <!-- Two -->
-        <section id="two" class="wrapper style3 fade-up">
+        <section id="two" class="wrapper style3 fade-up" data-aos="fade-left">
             <div class="inner">
                 <h2>Kenapa harus ADS?</h2>
                 <p>ADS bukan sekadar jasa buat aplikasi — kami adalah partner transformasi digital usaha Anda dengan fitur utama :.</p>
@@ -187,7 +189,7 @@
         </section>
 
         <!-- Four -->
-        <section id="four" class="wrapper style2 fade-up">
+        <section id="four" class="wrapper style2 fade-up" data-aos="zoom-in">
             <div class="inner">
                 <h2>Paket Layanan</h2>
                 <p>Pilih paket yang sesuai dengan kebutuhan bisnis atau organisasi Anda.</p>
@@ -351,6 +353,15 @@ function scrollRight() {
   });
 </script>
 
+<!-- Script JS untuk AOS -->
+<script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
+
+<script>
+  AOS.init({
+    duration: 1000, // Durasi animasi dalam milidetik (1 detik)
+    once: true, // Animasi hanya akan terjadi sekali
+  });
+</script>
 
 
 
